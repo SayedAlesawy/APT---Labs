@@ -15,9 +15,12 @@ public class Client
             Matrix ans = SendTransposeRequest(A);
             ans.Print();
         }
-        else{
+        else if(choice == 2){
             int det = SendDeterminateRequest(A);
             System.out.printf("Det(A) = %d\n", det);
+        }
+        else{
+            System.out.println("Unrecognized request");
         }
     }
 
